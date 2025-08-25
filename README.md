@@ -1,2 +1,0 @@
-# luminarygem-support
-luminarygem-support
