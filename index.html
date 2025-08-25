@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuminaryGem Support</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #2d3748;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #718096;
+            margin-bottom: 15px;
+        }
+
+        .free-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #48bb78, #38a169);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 12px rgba(72, 187, 120, 0.3);
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #2d3748;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            font-weight: 600;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: #4a5568;
+            margin-bottom: 15px;
+            margin-top: 25px;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+
+        p, li {
+            margin-bottom: 15px;
+            color: #4a5568;
+            font-size: 1.1rem;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 25px 0;
+            text-align: center;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .faq-item {
+            background: #f7fafc;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            border-left: 4px solid #667eea;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 10px;
+        }
+
+        .faq-answer {
+            color: #4a5568;
+            margin-bottom: 0;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .header, .content {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+            }
+
+            .free-badge {
+                font-size: 0.9rem;
+                padding: 6px 16px;
+            }
+
+            .logo {
+                width: 60px;
+                height: 60px;
+            }
+
+            .contact-info {
+                padding: 20px;
+            }
+
+            .contact-info a {
+                font-size: 1.1rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .faq-item {
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header, .content {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .subtitle {
+                font-size: 0.9rem;
+            }
+
+            .free-badge {
+                font-size: 0.8rem;
+                padding: 5px 12px;
+            }
+
+            .logo {
+                width: 50px;
+                height: 50px;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+
+            p, li {
+                font-size: 1rem;
+            }
+
+            .contact-info a {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="logo">
+            <img src="icon.png" alt="LuminaryGem Logo">
+        </div>
+        <h1>LuminaryGem</h1>
+        <p class="subtitle">Crystal Energy & Chakra Balance</p>
+        <div class="free-badge">
+            <span>✨ Completely Free ✨</span>
+        </div>
+        <p>Your spiritual journey companion powered by AI</p>
+    </div>
+
+    <div class="content">
+        <h2>📞 Contact Support</h2>
+        <div class="contact-info">
+            <p>Need help? We're here for you!</p>
+            <a href="mailto:nakedaston@gmail.com">nakedaston@gmail.com</a>
+            <p style="margin-top: 15px; font-size: 1rem;">We typically respond within 24 hours</p>
+        </div>
+
+        <h2>❓ Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <div class="faq-question">🤖 How does AI crystal recommendation work?</div>
+            <div class="faq-answer">Our AI analyzes your current mood, goals, and preferences to recommend the perfect crystals for your needs. The recommendations become more accurate as you use the app more.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">🧘‍♀️ How do I reset my chakra assessment?</div>
+            <div class="faq-answer">Go to Settings > Personal Data > Reset Assessment. This will clear your previous results and allow you to retake the chakra balance quiz.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">✨ Can I use the app offline?</div>
+            <div class="faq-answer">Yes! Most features work offline, including meditation guides and crystal information. Only AI recommendations require an internet connection.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">📈 How do I track my spiritual progress?</div>
+            <div class="faq-answer">Use the daily check-in feature to log your mood and energy levels. The app will show your progress over time with beautiful charts and insights.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">🔒 Is my data private and secure?</div>
+            <div class="faq-answer">Absolutely. We use end-to-end encryption and never share your personal spiritual journey data. See our Privacy Policy below for full details.</div>
+        </div>
+
+        <h2>🔒 Privacy Policy</h2>
+        <p>Your privacy is important to us. LuminaryGem collects minimal data necessary to provide personalized recommendations:</p>
+        <ul>
+            <li><strong>Personal Preferences:</strong> Mood, goals, and crystal preferences for AI recommendations</li>
+            <li><strong>Usage Analytics:</strong> Anonymous app usage data to improve features</li>
+            <li><strong>No Sensitive Data:</strong> We never collect personal identification information</li>
+        </ul>
+        <p>All data is encrypted and stored securely. You can delete your data anytime through Settings > Privacy > Delete My Data.</p>
+
+
+        <h2>🚀 App Features</h2>
+        <ul>
+            <li><strong>AI Crystal Recommendations:</strong> Personalized crystal guidance based on your needs</li>
+            <li><strong>Chakra Assessment:</strong> Interactive chakra balancing and healing tools</li>
+            <li><strong>Meditation Guides:</strong> Guided meditations for each energy center</li>
+            <li><strong>Progress Tracking:</strong> Monitor your spiritual growth over time</li>
+            <li><strong>Crystal Database:</strong> Comprehensive information on healing properties</li>
+            <li><strong>Beautiful Design:</strong> Intuitive interface that inspires tranquility</li>
+        </ul>
+
+        <h2>📱 System Requirements</h2>
+        <ul>
+            <li>iOS 15.0 or later</li>
+            <li>Compatible with iPhone, iPad, and iPod touch</li>
+            <li>Internet connection required for AI features</li>
+            <li>Approximately 50MB storage space</li>
+        </ul>
+
+        <h2>🔄 App Updates</h2>
+        <p>We regularly update LuminaryGem with new features, crystals, and improvements. Enable automatic updates in your App Store settings to always have the latest version.</p>
+
+        <p><strong>Current Version:</strong> 1.0</p>
+        <p><strong>Last Updated:</strong> August 2025</p>
+    </div>
+</div>
+
+<div class="footer">
+    <p>&copy; 2025 LuminaryGem. All rights reserved.</p>
+    <p>Made with ❤️ for spiritual seekers worldwide</p>
+</div>
+</body>
+</html>
